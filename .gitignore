@@ -1,0 +1,49 @@
+# ------------------------
+# Python / FastAPI Practice
+# ------------------------
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Environment variable files
+*.env
+.env.*
+
+# FastAPI / Uvicorn logs
+*.log
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.coverage.*
+.cache
+
+# MyPy / static analysis
+.mypy_cache/
+.dmypy.json
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# VSCode
+.vscode/
+
+# JetBrains / PyCharm
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
