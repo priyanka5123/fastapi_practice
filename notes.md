@@ -7,3 +7,20 @@ run cd app fastapi dev main.py
 run uvicorn app.main:app --reload(Run Uvicorn from project root)
 http://127.0.0.1:8000/add?a=10&b=20
 http://127.0.0.1:8000/multiply?a=5&b=6
+
+http://127.0.0.1:8000/docs or postman
+http://127.0.0.1:8000/todo get
+POST http://127.0.0.1:8000/todo
+{
+  "id": 1,
+  "task": "Learn FastAPI project",
+  "completed": false
+}
+PUT http://127.0.0.1:8000/todo/1
+{
+  "id": 1,
+  "task": "Do FastAPI project",
+  "completed": false
+}
+Delete http://127.0.0.1:8000/todo/1
+
