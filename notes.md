@@ -24,3 +24,31 @@ PUT http://127.0.0.1:8000/todo/1
 }
 Delete http://127.0.0.1:8000/todo/1
 
+for db pip install sqlalchemy
+for jwt pip install python-jose passlib[bcrypt]
+
+To generate secret key in powershell
+[guid]::NewGuid().ToString()
+pip install dotenv
+pip uninstall bcrypt passlib -y
+pip install passlib[bcrypt]
+pip install argon2_cffi
+POST /register
+{
+  "username": "sara",
+  "password": "s123"
+}
+POST /login
+{
+  "username": "sara",
+  "password": "s123"
+}
+response
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "token_type": "bearer"
+}
+
+curl -H "Authorization: Bearer <access_token>" http://127.0.0.1:8000/me
+response
+{ "username": "sara" }
